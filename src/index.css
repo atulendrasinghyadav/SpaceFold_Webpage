@@ -10,7 +10,7 @@
   --card-bg: rgba(30, 41, 59, 0.3);
   --card-border: rgba(148, 163, 184, 0.1);
   --font-body: 'Outfit', -apple-system, system-ui, sans-serif;
-  
+
   --transition-fast: 0.2s ease;
   --transition-normal: 0.4s ease;
   --transition-slow: 0.8s ease;
@@ -35,7 +35,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: 
+  background-image:
     radial-gradient(circle at 15% 50%, rgba(129, 140, 248, 0.08), transparent 25%),
     radial-gradient(circle at 85% 30%, rgba(45, 212, 191, 0.08), transparent 25%);
   background-attachment: fixed;
@@ -65,7 +65,7 @@ button {
 
 .glass-panel:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 40px rgba(129, 140, 248, 0.15) inset;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(129, 140, 248, 0.15) inset;
   border-color: rgba(129, 140, 248, 0.4);
   background-color: rgba(30, 41, 59, 0.4);
 }
@@ -120,15 +120,42 @@ button {
 
 /* Animations that are purely CSS fallback if needed */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes pulse-glow {
-  0% { box-shadow: 0 0 0 0 rgba(129, 140, 248, 0.4); }
-  70% { box-shadow: 0 0 0 20px rgba(129, 140, 248, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(129, 140, 248, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(129, 140, 248, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px rgba(129, 140, 248, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(129, 140, 248, 0);
+  }
+}
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  transform-origin: 0%;
+  z-index: 9999;
 }
 
 /* Reusable section paddings */
@@ -165,6 +192,7 @@ button {
   .section-padding {
     padding: 80px 0;
   }
+
   .h2-title {
     font-size: 2rem;
   }
