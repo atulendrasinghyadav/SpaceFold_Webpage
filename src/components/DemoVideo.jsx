@@ -3,11 +3,13 @@ import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
 import './DemoVideo.css';
 
+import videoThumb from '../assets/video-thumbnail.png';
+
 const DemoVideo = () => {
   return (
     <section id="demo" className="section-padding">
       <div className="container">
-        <motion.div 
+        <motion.div
           className="demo-header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +20,7 @@ const DemoVideo = () => {
           <p className="p-subtitle">Watch how SpaceFold maps mind-bending cosmic phenomena directly over your physical surroundings.</p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="demo-container"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -26,13 +28,14 @@ const DemoVideo = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="demo-device-frame glass-panel">
-            {/* Aspect ratio container (16:9) */}
-            <div className="video-placeholder">
+            {/* Aspect ratio container (16:9) with Drive Link */}
+            <a href="https://drive.google.com/file/d/1g3YFGXCEsXbLRv-n6W71CrOcva-QF9Uj/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="video-placeholder">
+              <img src={videoThumb} alt="SpaceFold Demo" className="demo-thumbnail" />
               <div className="play-button-wrapper pulse-anim">
-                <Play size={32} fill="white" />
+                <Play size={36} fill="white" style={{ marginLeft: '4px' }} />
               </div>
               <div className="demo-gradient-overlay"></div>
-            </div>
+            </a>
           </div>
         </motion.div>
       </div>

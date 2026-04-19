@@ -1,23 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MousePointerClick, Activity, Lightbulb } from 'lucide-react';
+import { ScanLine, Box, Brain } from 'lucide-react';
 import './HowItWorks.css';
 
 const steps = [
   {
-    title: "Interaction",
-    desc: "Engage with abstract concepts using intuitive gestures like tapping and dragging.",
-    icon: <MousePointerClick size={24} />
+    title: "Scan Surface",
+    desc: "Scan your immediate surroundings to map surfaces and seamlessly anchor the Augmented Reality fabric.",
+    icon: <ScanLine size={24} color="var(--accent-cyan)" />
   },
   {
-    title: "Observation",
-    desc: "See immediate visual feedback as spacetime naturally reacts to your inputs in AR.",
-    icon: <Activity size={24} />
+    title: "Interact with Models",
+    desc: "Once the grid is established, spawn physical masses and deform spacetime using intuitive hand gestures.",
+    icon: <Box size={24} color="var(--accent-purple)" />
   },
   {
-    title: "Understanding",
-    desc: "Achieve 'Aha!' moments as AI seamlessly explains the physics behind your observations.",
-    icon: <Lightbulb size={24} />
+    title: "Ask the AI",
+    desc: "Have any doubts during an experiment? Ask the integrated foundation model for instant, deep physics clarification.",
+    icon: <Brain size={24} color="#f472b6" />
   }
 ];
 
@@ -33,9 +33,9 @@ const HowItWorks = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="h2-title" style={{ textAlign: 'left' }}>The Learning <br/><span className="gradient-text">Algorithm</span></h2>
+            <h2 className="h2-title" style={{ textAlign: 'left' }}>The Seamless <br/><span className="gradient-text">Workflow</span></h2>
             <p className="p-subtitle" style={{ textAlign: 'left', marginLeft: 0 }}>
-              SpaceFold uses a simple yet powerful pedagogical loop. Active experimentation replaces passive reading, creating a mental model that sticks.
+              SpaceFold is designed for absolute immersion. From mapping your reality to consulting the foundation model, the journey is completely frictionless.
             </p>
           </motion.div>
 

@@ -66,7 +66,6 @@ const Features = () => {
               className="feature-card glass-panel"
               key={idx}
               variants={itemVariants}
-              whileHover={{ y: -10, scale: 1.02 }}
             >
               <div className="feature-icon-wrapper">
                 {feature.icon}
