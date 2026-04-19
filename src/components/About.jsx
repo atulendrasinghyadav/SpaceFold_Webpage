@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Globe } from 'lucide-react';
+import { Globe } from 'lucide-react';
 import './About.css';
 
 const LinkedinIcon = ({ size = 24 }) => (
@@ -52,9 +52,6 @@ const About = () => {
               </a>
               <a href="https://www.atulendrasinghyadav.dev/" className="about-social-icon" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-purple)' }}>
                 <Globe size={22} />
-              </a>
-              <a href="mailto:atulendrasinghyadav007@gmail.com" className="about-social-icon" style={{ color: 'var(--accent-cyan)' }}>
-                <Mail size={22} />
               </a>
             </motion.div>
           </motion.div>
