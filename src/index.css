@@ -147,17 +147,6 @@ button {
   }
 }
 
-.scroll-progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
-  transform-origin: 0%;
-  z-index: 9999;
-}
-
 /* Reusable section paddings */
 .section-padding {
   padding: 120px 0;
