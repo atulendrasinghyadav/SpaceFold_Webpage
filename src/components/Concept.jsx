@@ -7,7 +7,7 @@ const Concept = () => {
       <div className="container">
         <motion.div 
           className="glass-panel"
-          style={{ padding: '80px 40px', textAlign: 'center', maxWidth: '900px', margin: '0 auto', position: 'relative', overflow: 'hidden' }}
+          style={{ padding: 'clamp(40px, 8vw, 80px) clamp(20px, 5vw, 40px)', textAlign: 'center', maxWidth: '900px', margin: '0 auto', position: 'relative', overflow: 'hidden' }}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -27,7 +27,7 @@ const Concept = () => {
           </motion.h2>
 
           <motion.p 
-            style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', lineHeight: '1.8', margin: '0 auto', maxWidth: '700px' }}
+            style={{ fontSize: 'clamp(1rem, 2vw, 1.1rem)', color: 'var(--text-secondary)', lineHeight: '1.8', margin: '0 auto', maxWidth: '700px' }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

@@ -1,14 +1,14 @@
 .how-it-works-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
 
 .hiw-steps {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   position: relative;
 }
 
@@ -50,11 +50,12 @@
 
 .step-content {
   flex-grow: 1;
-  padding: 24px;
+  padding: 20px;
   display: flex;
   align-items: flex-start;
   gap: 16px;
   transition: transform var(--transition-fast);
+  border-radius: 16px;
 }
 
 .step-content:hover {
@@ -67,15 +68,15 @@
 }
 
 .step-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .step-desc {
   color: var(--text-secondary);
   line-height: 1.5;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 992px) {
